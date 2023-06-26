@@ -14,35 +14,46 @@
 	<link rel="icon" href="#">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/swipe/2.0.0/swipe.min.js"
+		integrity="sha512-xC1fS6NWgwCMJd/b5MT0Ci1DttjZ2qTxmXHQnUIyWDJddui/jiC5QwAokElrYYT9SOlK/bKMz0UBYJYi1JxdDw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<link rel="stylesheet" href="style.css">
 	<script src="index.js"></script>
 </head>
 
 <body>
-	<div class="image_container flex center_inline">
-		<img src="./media/AndersSöderberg.png" alt="me" srcset="" height="343px" width="100%">
+	<div id="slider" class="swipe">
+		<div class="swipe-wrap">
+			<div class="container">
+				<div class="image_container flex center_inline">
+					<img src="./media/AndersSöderberg.png" alt="me" srcset="" height="343px" width="100%">
+				</div>
+
+				<h1>Anders Söderberg</h1>
+
+				<div class="flex space_around">
+					<a href="tel:+46735311606" class="center_inline">
+						<img src="./media/Group 9.svg" alt="" srcset="" width="30px">
+						<p>Ring</p>
+					</a>
+					<a href="sms:+46735311606" class="center_inline">
+						<img src="./media/Group 9.svg" alt="" srcset="" width="30px">
+						<p>SMS</p>
+					</a>
+					<a href="mailto:anders_soderberg@hotmail.com" class="center_inline">
+						<img src="./media/Group 9.svg" alt="" srcset="" width="30px">
+						<p>Epost</p>
+					</a>
+				</div>
+				<button id="add_contact">Lägg till kontakt</button>
+			</div>
+
+			<div class="container">
+				<img src="media/qrKod.svg" alt="" srcset="">
+			</div>
+		</div>
 	</div>
-
-	<h1>Anders Söderberg</h1>
-
-	<div class="contact flex space_around">
-		<a href="tel:+46735311606" class="center_inline">
-			<img src="./media/Group 9.svg" alt="" srcset="" width="30px">
-			<p>Ring</p>
-		</a>
-		<a href="sms:+46735311606" class="center_inline">
-			<img src="./media/Group 9.svg" alt="" srcset="" width="30px">
-			<p>SMS</p>
-		</a>
-		<a href="mailto:anders_soderberg@hotmail.com" class="center_inline">
-			<img src="./media/Group 9.svg" alt="" srcset="" width="30px">
-			<p>Epost</p>
-		</a>
-	</div>
-
-	<button id="add_contact">Lägg till kontakt</button>
-	<div id="show"></div>
 </body>
 
 </html>
