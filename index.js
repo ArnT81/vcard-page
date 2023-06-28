@@ -1,5 +1,5 @@
 const addContact = async () => {
-	window.location.href = 'https://arnt.hopto.org/vcard';
+	window.location.href = 'https://www.anderssöderberg.se/vcard';
 };
 
 const createSwipe = () => {
