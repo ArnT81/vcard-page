@@ -50,10 +50,12 @@ a:active {
 
 .image_container img {
 	border-radius: 50%;
-	width: 100%;
+	width: 87%;
 	max-width: 568px;
+	object-fit: cover;
+	object-position: 44% 0;
 	aspect-ratio: 1 / 1;
-	border: 3px solid white;
+	padding: 10px;
 }
 
 .center_inline {
@@ -106,6 +108,7 @@ a:active {
 
 	.image_container img {
 		border: 8px solid var(--primary-color);
+		filter: drop-shadow(0 0 10px var(--secondary-color));
 	}
 
 	a,
@@ -129,6 +132,7 @@ a:active {
 
 	.image_container img {
 		border: 8px solid var(--secondary-color);
+		filter: drop-shadow(0 0 10px var(--primary-color));
 	}
 
 	a,
