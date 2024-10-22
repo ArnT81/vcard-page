@@ -1,6 +1,6 @@
 :root {
 	--spacing: 16px;
-	--primary-color: #060C3B;
+	--primary-color: #101011;
 	--secondary-color: white;
 }
 
@@ -50,10 +50,10 @@ a:active {
 
 .image_container img {
 	border-radius: 50%;
-	width: 87%;
+	width: 67%;
 	max-width: 568px;
 	object-fit: cover;
-	object-position: 44% 0;
+	object-position: -30px -10%;
 	aspect-ratio: 1 / 1;
 	padding: 10px;
 }
@@ -101,14 +101,14 @@ a:active {
 }
 
 @media (prefers-color-scheme: light) {
-	body {
+	/* body {
 		background: linear-gradient(to bottom, var(--primary-color) 25%, var(--secondary-color) 58%);
 		color: black;
-	}
+	} */
 
 	.image_container img {
 		border: 8px solid var(--primary-color);
-		filter: drop-shadow(0 0 10px var(--secondary-color));
+		filter: drop-shadow(0 0 4px var(--primary-color));
 	}
 
 	a,
@@ -126,13 +126,14 @@ a:active {
 
 @media (prefers-color-scheme: dark) {
 	body {
-		background: linear-gradient(to bottom, var(--secondary-color) 10%, var(--primary-color) 33%);
+		/* background: linear-gradient(to bottom, var(--secondary-color) 10%, var(--primary-color) 33%); */
+		background-color: black;
 		color: white;
 	}
 
 	.image_container img {
 		border: 8px solid var(--secondary-color);
-		filter: drop-shadow(0 0 10px var(--primary-color));
+		filter: drop-shadow(0 0 10px var(--secondary-color));
 	}
 
 	a,
